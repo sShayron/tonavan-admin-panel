@@ -1,0 +1,14 @@
+.button {
+    &.is-primary {
+        color: $primary-color!important;
+        border-color: $primary-color!important;
+
+        &:hover {
+            background-color: $primary-color!important;
+            color: black!important;
+            span {
+                color: black!important;
+            }
+        }
+    }
+}

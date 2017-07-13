@@ -1,0 +1,75 @@
+#app {
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #2c3e50;
+  font-size: 16px;
+}
+h1 {
+  color: white;
+}
+.v-select {
+  width: 240px;
+  .dropdown-toggle {
+    input[type="search"] {
+      width: 0!important;
+    }
+  }
+}
+
+body{
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.widget{
+  padding-top: 40px !important
+}
+
+.table{
+  background-color: transparent !important
+}
+
+
+input.large, input[type=date].large, input[type=datetime].large, input[type=email].large, input[type=number].large, input[type=password].large, input[type=search].large, input[type=tel].large, input[type=text].large, input[type=time].large, input[type=url].large, select:not(.default).large, textarea.large {
+    font-size: 18px;
+    padding: 15px 18px 16px;
+}
+
+input, input[type=date], input[type=datetime], input[type=email], input[type=number], input[type=password], input[type=search], input[type=tel], input[type=text], input[type=time], input[type=url], select:not(.default), textarea {
+    background-color: #fff;
+    font-family: "Open Sans",Arial,sans-serif;
+    line-height: normal!important;
+    border: 0;
+    -webkit-box-shadow: 0 1px 3px rgba(128,128,128,.2);
+    -moz-box-shadow: 0 1px 3px rgba(128,128,128,.2);
+    box-shadow: 0 1px 3px rgba(128,128,128,.2);
+    color: #222;
+    display: block;
+    font-size: 14px;
+    margin: 0;
+    padding: 23px 18px 24px;
+    width: 100%;
+}
+
+.title{
+  margin-top:7px;
+  margin-bottom: 20px;
+}
+
+.painel{
+  margin-bottom: 40px
+}
+
+/* Enter and leave animations can use different */
+/* durations and timing functions.              */
+.slide-fade-enter-active {
+  transition: all .5s ease;
+}
+.slide-fade-leave-active {
+  transition: all 0;
+}
+.slide-fade-enter, .slide-fade-leave-to
+/* .slide-fade-leave-active for <2.1.8 */ {
+  opacity: 0;
+}

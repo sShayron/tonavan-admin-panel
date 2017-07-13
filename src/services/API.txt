@@ -1,0 +1,7 @@
+Passageiros: http://apivan.azurewebsites.net/api/passageiro (GET, POST)
+
+Veiculo: http://apivan.azurewebsites.net/api/veiculo (GET, POST)
+
+Motorista: http://apivan.azurewebsites.net/api/motorista (GET, POST)
+
+Empresa: http://apivan.azurewebsites.net/api/empresa (GET, POST)

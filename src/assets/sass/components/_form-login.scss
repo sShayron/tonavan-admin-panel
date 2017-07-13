@@ -1,0 +1,73 @@
+%degrade-bg {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffc460+0,d9a751+100 */
+background: #ffc460; /* Old browsers */
+background: -moz-linear-gradient(top, #ffc460 0%, #d9a751 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #ffc460 0%,#d9a751 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #ffc460 0%,#d9a751 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffc460', endColorstr='#d9a751',GradientType=0 ); /* IE6-9 */
+}
+
+
+.login {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: $black;
+
+    &__wrapper {
+        @extend %degrade-bg;
+        border-radius: 10px;
+        width: 400px;
+        text-align: center;
+        box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.5);
+        .logo {
+            height: 140px;
+            margin: 30px 0;
+        }
+    }
+
+    &__form {
+        margin: 0 30px;
+        border-radius: 10px;
+        label {
+            &:first-child {
+                input {
+                    border-radius: 10px 10px 0 0;
+                }
+            }
+            input {
+                border-radius: 0 0 10px 10px;
+            }
+        }
+
+        input {
+            &:focus {
+                outline-color: $black;
+            }
+        }
+
+        .button {
+            &.is-login {
+                font-family: roboto;
+                font-weight: normal;
+                font-size: 16px;
+                background-color: $black;
+                color: white;
+                border: none;
+                padding: 20px;
+                padding: 10px 30px;
+                height: auto;
+                margin: 20px;
+                transition: all .3s;
+                border-radius: 5px;
+                &:hover {
+                    box-shadow: 2px 2px 0px 0px rgba(0,0,0,0.5);
+                    color: $primary-color;
+                }
+            }
+        }
+    }
+}
